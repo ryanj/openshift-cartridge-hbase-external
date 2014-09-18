@@ -1,47 +1,38 @@
 ---
-Name: legacydb
-Cartridge-Short-Name: LEGACYDB
+Name: hbase
+Cartridge-Short-Name: HBASE
 Architecture: x86_64
-Display-Name: legacydb 1.0
-Description: configuration strings for a remote data service
+Display-Name: hbase 1.0
+Description: configuration strings for a remote hbase dataservice
 Version: '1.0'
 Versions:
 - '1.0'
 Cartridge-Version: 0.0.1
-Cartridge-Vendor: ryanj
+Cartridge-Vendor: external
 License: GPL
-Vendor: ryanj
+Vendor: external
 Cart-Data:
-- Key: LEGACYDB_PORT
+- Key: HBASE_PORT
   Type: environment
-  Description: db port connection info
-- Key: LEGACYDB_HOST
+  Description: HBASE port connection info
+- Key: HBASE_HOST
   Type: environment
-  Description: db host connection info
-- Key: LEGACYDB_USERNAME
+  Description: hbase host connection info
+- Key: HBASE_TABLE
   Type: environment
-  Description: db username connection info
-- Key: LEGACYDB_PASSWORD
-  Type: environment
-  Description: db password connection info
-- Key: LEGACYDB_DEFAULT_DB
-  Type: environment
-  Description: default database
-- Key: LEGACYDB_URL
-  Type: environment
-  Description: db configuration url
+  Description: default hbase table connection
 Categories:
 - embedded
 - plugin
-Website: https://github.com/ryanj/openshift-cartridge-legacydb
-Source-Url: https://github.com/ryanj/openshift-cartridge-legacydb.git
+Website: https://github.com/ryanj/openshift-cartridge-hbase
+Source-Url: https://github.com/ryanj/openshift-cartridge-hbase.git
 Provides:
-- legacydb-1.0
-- legacydb
+- hbase-1.0
+- hbase
 Scaling:
   Min: 1
   Max: -1
 Group-Overrides:
 - components:
-  - legacydb-1.0
+  - hbase-1.0
   - web_framework

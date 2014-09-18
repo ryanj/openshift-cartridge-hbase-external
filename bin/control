@@ -3,23 +3,23 @@
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 function start() {
-  echo "LegacyDB connection strings available"
+  echo "hbase connection strings available"
 }
 
 function stop() {
-  echo "LegacyDB connection strings available"
+  echo "hbase connection strings available"
 }
 
 function restart() {
-  echo "LegacyDB connection strings available"
+  echo "hbase connection strings available"
 }
 
 function status() {
-  echo "LegacyDB connection strings available"
+  echo "hbase connection strings available"
 }
 
 function reload() {
-  echo "LegacyDB connection strings available"
+  echo "hbase connection strings available"
 }
 
 function tidy() {

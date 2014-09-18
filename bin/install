@@ -2,13 +2,11 @@
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
-client_result "LegacyDB connection strings have been added to your application environment."
+client_result "hbase connection strings have been added to your application environment."
 client_result ""
-client_result "  LEGACYDB_HOST=${LEGACYDB_HOST}"
-client_result "  LEGACYDB_PORT=${LEGACYDB_PORT}"
-client_result "  LEGACYDB_USERNAME=${LEGACYDB_USERNAME}"
-client_result "  LEGACYDB_PASSWORD=${LEGACYDB_PASSWORD}"
-client_result "  LEGACYDB_URL=${LEGACYDB_URL}"
+client_result "  HBASE_HOST=${HBASE_HOST}"
+client_result "  HBASE_PORT=${HBASE_PORT}"
+client_result "  HBASE_TABLE=${HBASE_TABLE}"
 client_result ""
 
 exit 0
